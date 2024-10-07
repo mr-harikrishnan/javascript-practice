@@ -1,6 +1,7 @@
 function week(day){
    switch (day){
-    case 1:"monday";
+    case 1:
+        console.log("monday")
     break;
 
     case 2:"tuesday";
@@ -22,4 +23,4 @@ function week(day){
     break
    }
 }
-week(2)
+week(3)
