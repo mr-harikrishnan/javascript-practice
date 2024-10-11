@@ -1,0 +1,45 @@
+
+<!-- adding a tag using js -->
+
+
+<html>
+<body>
+    <div class="container">
+        <header id="head">
+            <h1>HARI</h1>
+        </header>
+
+        <ul id="list">
+            <li class="ash">ASH</li>
+            <li class="red">RED</li>
+            <li class="blue">BLUE</li>
+        </ul>
+
+        <button class="addColor">COLOUR</button>
+        <button class="highLight">HIGHLIGHT</button>
+        <button class="remove">REMOVE</button>
+
+    </div>
+    <script>
+
+        const container=document.querySelector(".container");
+ 
+        let newAnchor = document.createElement('a');
+
+  
+        newAnchor.href = 'www.youtube.com'; 
+
+  
+        newAnchor.textContent = 'Visit Example.com';
+
+       
+        newAnchor.target = '_blank'; // open new tab
+
+        
+        container.appendChild(newAnchor);
+
+
+    </script>
+</body>
+
+</html>

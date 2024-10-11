@@ -1,0 +1,71 @@
+<html>
+
+<body>
+    <div class="container">
+        <header id="head">
+            <h1>HARI</h1>
+        </header>
+
+        <ul id="list">
+            <li class="ash">ASH</li>
+            <li class="red">RED</li>
+            <li class="blue">BLUE</li>
+        </ul>
+
+        <button class="addColor">COLOUR</button>
+        <button class="highLight">HIGHLIGHT</button>
+        <button class="remove">REMOVE</button>
+
+    </div>
+    <script>
+       const addBut=document.querySelector(".addColor");
+       const color=document.getElementById("list")
+       const removeBut=document.querySelector(".remove");
+       const bgBut=document.querySelector(".highLight")
+       const container=document.querySelector(".container")
+
+addBut.addEventListener("click",()=>{
+    const addLi=document.createElement("li");
+    addLi.textContent="GREEN";
+    addLi.classList.add("green")
+    color.appendChild(addLi)
+})
+
+removeBut.addEventListener("click",()=>{
+    const rem=document.querySelector(".green");
+    rem.remove();
+   
+})
+
+bgBut.addEventListener("click",()=>{
+    const cb1=document.querySelector(".ash");
+    const cb2=document.querySelector(".red");
+    const cb3=document.querySelector(".blue");
+    cb1.style.backgroundColor = "gray";
+    cb2.style.backgroundColor = "red";
+    cb3.style.backgroundColor = "blue";
+})
+
+
+
+      
+        let newAnchor = document.createElement('a');
+
+  
+        newAnchor.href = 'www.youtube.com'; 
+
+  
+        newAnchor.textContent = 'Visit Example.com';
+
+       
+        newAnchor.target = '_blank';
+
+        
+        container.appendChild(newAnchor);
+  
+
+
+    </script>
+</body>
+
+</html>

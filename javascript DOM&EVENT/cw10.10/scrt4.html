@@ -1,0 +1,33 @@
+<html>
+<body>
+    <div class="container">
+        <header id="head">
+            <h1>HARI</h1>
+        </header>
+
+        <ul id="list">
+            <li class="ash">ASH</li>
+            <li class="red">RED</li>
+            <li class="blue">BLUE</li>
+        </ul>
+
+        <button class="addColor">COLOUR</button>
+        <button class="highLight">HIGHLIGHT</button>
+        <button class="remove">REMOVE</button>
+        <button class="no">NO CLICK</button>
+
+    </div>
+    <script>
+ 
+       const alarm=document.querySelector(".no");
+
+       alarm.addEventListener("click",()=>{
+        alarm.remove()
+        alert("deleted")
+       })
+
+
+    </script>
+</body>
+
+</html>
