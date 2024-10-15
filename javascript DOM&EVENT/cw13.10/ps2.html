@@ -1,0 +1,45 @@
+<html >
+<body>
+    <div class="header">
+        <h1>HARIKRISHNAN</h1>
+        <p>This is my name</p>
+    </div>
+
+    <div class="main">
+        <a href="www.google.com">CLICK</a>
+        <p>GOOGLE LINK</p>
+        <h1>THIRUVARUR</h1>
+        <ul>
+            <li class="list">RED</li>
+            <li class="list">BLUE</li>
+            <li class="list">GREEN</li>
+            <li class="list">YELLOW</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <button class="add">ADD</button>
+        <button class="remove">REMOVE</button>
+        <button class="bg">BG CHANGE</button>
+        <input id="COLO">
+        <button class="addh2">ADD PROMPT</button>
+        <input  name="" id="adddh2">
+       
+    </div>
+
+
+    <script>
+       const but=document.querySelector(".addh2");
+       const head=document.querySelector(".header");
+       const prom=document.getElementById("adddh2");
+
+
+       but.addEventListener("click",()=>{
+        const newh2=document.createElement("h2");
+        newh2.textContent=prom.value;
+        head.appendChild(newh2);
+        alert("added completed")
+       })
+    </script>
+</body>
+</html>

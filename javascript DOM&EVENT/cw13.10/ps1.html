@@ -1,0 +1,71 @@
+
+<html >
+<body>
+    <div class="header">
+        <h1>HARIKRISHNAN</h1>
+        <p>This is my name</p>
+    </div>
+
+    <div class="main">
+        <a href="www.google.com">CLICK</a>
+        <p>GOOGLE LINK</p>
+        <h1>THIRUVARUR</h1>
+        <ul>
+            <li class="list">RED</li>
+            <li class="list">BLUE</li>
+            <li class="list">GREEN</li>
+            <li class="list">YELLOW</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <button class="add">ADD</button>
+        <button class="remove">REMOVE</button>
+        <button class="bg">BG CHANGE</button>
+        <input id="COLO">
+        <button class="addh2">ADD PROMPT</button>
+        <input  name="" id="adddh2">
+       
+    </div>
+
+
+    <script>
+        const head=document.querySelector(".header");
+        const addd=document.querySelector(".add");
+        const rem=document.querySelector(".remove");
+        const high=document.querySelector(".bg");
+        const user=document.getElementById("COLO");
+       const but=document.querySelector(".addh2")
+       
+       
+        
+        addd.addEventListener("click",()=>{
+            const newh1=document.createElement("h1")
+            newh1.textContent="MAMALLAPURAM";
+            newh1.classList.add("new")
+            head.appendChild(newh1)
+        })
+
+        rem.addEventListener("click",()=>{
+            const remo=document.querySelector(".new");
+remo.remove()
+        })
+
+
+      high.addEventListener("click",()=>{
+        const cha=document.querySelector(".list");
+        cha.style.backgroundColor=user.value;
+      })
+
+    but.addEventListener("click",()=>{
+        const prom=document.getElementById("adddh2")
+        const newh2=document.createElement("h2");
+        newh2.textContent=String(prom.value);
+        head.appendChild(newh2)
+    })
+
+
+
+    </script>
+</body>
+</html>

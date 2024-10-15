@@ -1,0 +1,43 @@
+<html >
+<body>
+    <div class="header">
+        <h1>HARIKRISHNAN</h1>
+        <p>This is my name</p>
+    </div>
+
+    <div class="main">
+        <a href="www.google.com">CLICK</a>
+        <p>GOOGLE LINK</p>
+        <h1>THIRUVARUR</h1>
+        <ul>
+            <li class="list">RED</li>
+            <li class="list">BLUE</li>
+            <li class="list">GREEN</li>
+            <li class="list">YELLOW</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <button class="add">ADD</button>
+        <button class="remove">REMOVE</button>
+        <button class="bg">BG CHANGE</button>
+        <input id="COLO">
+        <button class="addh2">ADD PROMPT</button>
+        <input  name="" id="adddh2">
+       
+    </div>
+
+
+
+    <script>
+        const listitem=document.querySelectorAll(".list");
+        const but=document.querySelector(".remove");
+
+        but.addEventListener("click",()=>{
+            listitem.forEach(list=>list.remove())
+        })
+
+    </script>
+    </body>
+    </html>
+

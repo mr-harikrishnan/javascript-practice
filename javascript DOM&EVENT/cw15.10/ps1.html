@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation Test</title>
+  <style>
+    .box-style {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="paragraph">
+  <p>1st pargraph</p>
+  <p>2nd paragraph</p>
+  <p>3rd paragraph</p>
+  <p>4th paragraph</p>
+</div>
+
+<p>harikrishnan para</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ex fugiat non eaque sint consequuntur, ducim
+  us beatae, explicabo cumque, cupiditate assumen
+  da? Sequi nemo voluptatem, non facilis fuga dolorum laudantium vero!</p>
+
+
+
+
+
+  <div class="container">
+    <h1 class="header">DOM Manipulation Test</h1>
+    <button id="addBox">Add Box</button>
+    <button id="removeBox">Remove Box</button>
+    <button id="showBoxCount">Show Box Count</button>
+    <button class="checkh1">CHECKH1</button>
+    
+  </div>
+ <script>
+
+  const prg=document.querySelectorAll("p");
+  const but=document.querySelector(".checkh1");
+
+  but.addEventListener("click",()=>{
+    prg.forEach(
+      console.log(prg[2].textContent)
+    )
+  })
+ 
+
+
+ </script>
+
+</body>
+</html>
