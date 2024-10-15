@@ -1,0 +1,25 @@
+
+<!-- Change Multiple Elements Using getElementsByClassName -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Multiple Elements</title>
+</head>
+<body>
+    <div class="color-box">Box 1</div>
+    <div class="color-box">Box 2</div>
+    <div class="color-box">Box 3</div>
+    <button id="changeColorsButton">Change Colors</button>
+    <script>
+        const change=document.getElementsByClassName("color-box");
+        const but=document.getElementById("changeColorsButton");
+        but.addEventListener("click",()=>{
+            for(i=change.length-1;i>=0;i--){
+                change[i].textContent="xoB"
+            }
+        })
+    </script>
+</body>
+</html>

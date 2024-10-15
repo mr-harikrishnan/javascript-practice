@@ -1,0 +1,24 @@
+<!-- Change background color. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+</head>
+<body>
+    <h1 id="title">Change My Background Color</h1>
+    <button id="colorButton">Change Color</button>
+    <script>
+        const bg=document.getElementById("title")
+        const but=document.getElementById("colorButton");
+
+        but.addEventListener("click",()=>{
+            bg.style.backgroundColor="red"
+        })
+    </script>
+</body>
+</html>
+
+
+

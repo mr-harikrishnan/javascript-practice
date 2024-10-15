@@ -1,0 +1,23 @@
+<!-- Add List Item Using getElementById and querySelector -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add List Item</title>
+</head>
+<body>
+    <input type="text" id="newItem" placeholder="Add a new item" />
+    <button id="addItemButton">Add Item</button>
+    <ul id="itemList"></ul>
+    <script>
+        const but= document.getElementById("addItemButton")
+        const inul=document.getElementById("itemList")
+        but.addEventListener("click",()=>{
+            const newli=document.createElement("li");
+            newli.textContent="HARI";
+            inul.appendChild(newli)
+        })
+    </script>
+</body>
+</html>

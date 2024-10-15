@@ -1,0 +1,43 @@
+<!-- // List Item Manipulation Using querySelectorAll
+Remove item when button is clicked.
+
+
+// Hint: 	getElementById: Use to select a single element by its ID.
+// 		getElementsByClassName: Use to select multiple elements by their class name.
+// 		querySelector: Use to select the first element that matches a CSS selector.
+// 		// querySelectorAll: Use to select all elements that match a CSS selector. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Item Example</title>
+</head>
+<body>
+    <ul id="itemList">
+        <li class="list-item">Item 1</li>
+        <li class="list-item">Item 2</li>
+        <li class="list-item">Item 3</li>
+    </ul>
+    <button id="removeItemsButton">Remove Items</button>
+    <script>
+        const but=document.getElementById("removeItemsButton");
+        const lists=document.getElementsByClassName("list-item");
+        const change=document.querySelectorAll(".list-item");
+        const nam=document.querySelector(".list-item")
+        
+nam.style.backgroundColor="yellow"
+
+change.forEach(lis=>{
+    lis.style.color="red"
+})
+
+        but.addEventListener("click",()=>{
+for(i=lists.length-1;i>=0;i--){
+    lists[i].remove()
+}
+        })
+    </script>
+</body>
+</html>

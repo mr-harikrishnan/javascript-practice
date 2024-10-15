@@ -1,0 +1,25 @@
+
+<!-- Change Text Color Using querySelector -->
+<!-- Change text color on button click. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text Color</title>
+</head>
+<body>
+    <p class="text">This is a sample text.</p>
+    <button id="colorChangeButton">Change Text Color</button>
+    <script>
+const but=document.getElementById("colorChangeButton");
+const tex=document.querySelector(".text")
+
+but.addEventListener("click",()=>{
+    tex.style.color="red";
+})
+
+    </script>
+</body>
+</html>
+
