@@ -1,0 +1,12 @@
+function gcd(a, b) {
+    while (b !== 0) {
+        let temp = b;
+        b = a % b; 
+        a = temp;  // change a= b / a= temp;
+    }
+    return a;
+}
+
+// Example usage
+let a = 18, b = 48;
+console.log(gcd(a, b));  // Expected output: 6
