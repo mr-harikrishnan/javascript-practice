@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation Example</title>
+  <style>
+    form {
+      width: 300px;
+      margin: 0 auto;
+    }
+    input {
+      display: block;
+      margin-bottom: 10px;
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    span {
+      color: red;
+      font-size: 12px;
+    }
+    button {
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    button:disabled {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Sign Up Form</h1>
+  
+  <form id="signupForm" novalidate>
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+    <span id="emailError"></span>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" required minlength="8">
+    <span id="passwordError"></span>
+
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" required>
+    <span id="confirmPasswordError"></span>
+
+    <button type="submit">Sign Up</button>
+  </form>
+
+  <script>
+    
+    const form=document.getElementById("signupForm");
+    const email=document.getElementById("email");
+    const emailError=document.getElementById("emailError");
+    const password=document.getElementById("password");
+    const passwordError=document.getElementById("passwordError");
+    const confirmPassword=document.getElementById("confirmPassword");
+    const confirmPasswordError=document.getElementById("confirmPasswordError");
+
+form.addEventListener("submit",function(event){
+
+emailError.textContent="";
+passwordError.textContent="";
+confirmPasswordError.textContent="";
+
+if(!email.validity.valid){
+  if(email.validity.valueMissing){
+    emailError.textContent="kfiu"
+  }
+
+  else if(email.validity.typeMismatch){
+  emailError.textContent="kucdutujtyf"
+}
+event.preventDefault()
+}
+
+if(!password.checkValidity()){
+  if(password.validity.valueMissing){
+    passwordError.textContent="enter pasword"
+  }
+  else if(password.value.length<8){
+    passwordError.textContent="mim 8 chr"
+  }
+  event.preventDefault()
+}
+
+if(password !== confirmPassword ){
+  passwordError.textContent="does not match";
+  event.preventDefault()
+}
+
+
+
+})
+
+
+password.addEventListener("input", function() {
+      passwordError.textContent = "";
+      if (password.value.length<8) {
+        passwordError.textContent = "tehdhgdjg"+password.value.length;
+      }
+    });
+
+
+
+
+    
+  </script>
+
+</body>
+</html>
