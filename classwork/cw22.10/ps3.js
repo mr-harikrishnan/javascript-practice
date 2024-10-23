@@ -1,3 +1,4 @@
+// Given an array of strings, find the string which comes first alphabetically without using any library functions. 
 function array(a){
 
    

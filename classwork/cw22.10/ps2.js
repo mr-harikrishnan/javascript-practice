@@ -1,3 +1,4 @@
+// Given an array of integers, find the minimum in the array
 function array(a){
 let min=a[0]
 for(i=1;i<a.length;i++){
