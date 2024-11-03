@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="val1" >
+    <input type="number" id="val2" >
+    <span id="result">Result</span>
+    <button id="add">Add</button>
+    <script>
+        
+        const but=document.getElementById("add");
+        const res=document.getElementById("result")
+
+        but.addEventListener("click",()=>{
+            const val1=document.getElementById("val1").value;
+        const val2=document.getElementById("val2").value;
+            const ans=val1+val2;
+            res.textContent=ans;
+        })
+    </script>
+</body>
+</html>

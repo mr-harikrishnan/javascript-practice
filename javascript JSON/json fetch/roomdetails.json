@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "name": "PG A",
+      "location": "Area 1",
+      "price": "5000"
+    },
+    {
+      "id": 2,
+      "name": "PG B",
+      "location": "Area 2",
+      "price": "6000"
+    },{
+       "id": 3,
+      "name": "PG H",
+      "location": "Area HK",
+      "price": "99999" 
+    }
+    
+  ]
+  

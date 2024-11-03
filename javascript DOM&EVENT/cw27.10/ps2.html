@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="sp"></div>
+    <button id="add">hkygkkjjy</button>
+</body>
+<script>
+    const add=document.getElementById("sp");
+    const but=document.getElementById("add");
+    but.addEventListener("click",()=>{
+        const ele=document.createElement("a");
+        ele.href="https://www.youtube.com/";
+        ele.textContent="hi"
+        add.appendChild(ele)
+    })
+
+</script>
+</html>
